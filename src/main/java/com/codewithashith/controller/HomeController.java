@@ -5,6 +5,7 @@ import javax.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class HomeController {
@@ -36,4 +37,16 @@ public class HomeController {
 
 		return "processForm";
 	}
+
+	// Binding Request param
+	@RequestMapping("/processFormThree")
+	public String processFormThree(@RequestParam("studentName") String name, Model model) {
+		name = name.toUpperCase();
+		name = "Hey v3 " + name;
+
+		model.addAttribute("message", name);
+
+		return "processForm";
+	}
+
 }
