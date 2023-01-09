@@ -2,6 +2,8 @@
 <body>
 	<h2>Hello World!</h2>
 	<a href="showForm">Form</a>
+	<br/>
+	<a href="student/form">Student Form</a>
 </body>
 </html>
 
