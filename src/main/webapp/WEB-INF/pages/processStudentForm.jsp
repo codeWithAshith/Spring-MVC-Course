@@ -10,6 +10,9 @@
 <body>
 	<p>First Name: ${student.firstName}</p>
 	<p>Last Name: ${student.lastName}</p>
+	<p>Country: ${student.country}</p>
+	<p>State: ${student.state}</p>
+	
 	<a href="form">Go Back</a>
 </body>
 </html>

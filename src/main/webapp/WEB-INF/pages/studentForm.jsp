@@ -13,19 +13,31 @@
 
 	<!-- student should match in the controller -->
 	<form:form action="processStudentForm" modelAttribute="student">
-
-		First Name: <form:input path="firstName" />
-
-		<br />
-		<br />
+		<p>
+			First Name:
+			<form:input path="firstName" />
+		</p>
+		<p>
+			Last Name:
+			<form:input path="lastName" />
+		</p>
+		<p>
+			Country:
+			<form:select path="country">
+				<form:option value="India" label="India" />
+				<form:option value="USA" label="USA" />
+				<form:option value="China" label="China" />
+			</form:select>
+		</p>
 		
-		Last Name: <form:input path="lastName" />
-
-		<br />
-		<br />
-
+		<!-- populate from java -->
+		<p>
+			State:
+			<form:select path="state">
+				<form:options items="${student.stateOptions}" />
+			</form:select>
+		</p>
 		<input type="submit" value="Submit" />
-
 	</form:form>
 
 </body>
