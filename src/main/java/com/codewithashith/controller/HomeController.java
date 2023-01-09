@@ -10,4 +10,14 @@ public class HomeController {
 	public String showPage() {
 		return "index";
 	}
+
+	@RequestMapping("/showForm")
+	public String showForm() {
+		return "showForm";
+	}
+
+	@RequestMapping("/processForm")
+	public String processForm() {
+		return "processForm";
+	}
 }
