@@ -12,6 +12,7 @@
 	<p>Last Name: ${student.lastName}</p>
 	<p>Country: ${student.country}</p>
 	<p>State: ${student.state}</p>
+	<p>Favorite Language: ${student.favoriteLanguage}</p>
 	
 	<a href="form">Go Back</a>
 </body>
