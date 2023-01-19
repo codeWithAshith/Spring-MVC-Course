@@ -47,6 +47,13 @@
 			C# <form:radiobutton path="favoriteLanguage" value="C#"/>
 		</p>
 		
+		<!-- Check Box -->
+		<p>
+			Linux <form:checkbox path="operatingSystem" value="Linux"/>
+			Windows <form:checkbox path="operatingSystem" value="Windows"/>
+			Mac Os <form:checkbox path="operatingSystem" value="Mac Os"/>
+		</p>
+		
 		<input type="submit" value="Submit" />
 	</form:form>
 

@@ -9,6 +9,7 @@ public class Student {
 	private String country;
 	private String state;
 	private String favoriteLanguage;
+	private String[] operatingSystem;
 	private LinkedHashMap<String, String> stateOptions;
 
 	public Student() {
@@ -20,6 +21,14 @@ public class Student {
 		stateOptions.put("KL", "Kerala");
 		stateOptions.put("MI", "Mumbai");
 
+	}
+
+	public String[] getOperatingSystem() {
+		return operatingSystem;
+	}
+
+	public void setOperatingSystem(String[] operatingSystem) {
+		this.operatingSystem = operatingSystem;
 	}
 
 	public String getFavoriteLanguage() {
